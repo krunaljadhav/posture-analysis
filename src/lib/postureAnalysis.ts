@@ -206,7 +206,7 @@ function analyzePelvicTilt(landmarks: PostureLandmarks): PostureMetric {
   return {
     name: `Pelvic Tilt (${tiltType})`,
     angle: angle,
-    normalRange: [7, 15],
+    normalRange: [7, 11],
     severity,
     description,
     recommendation,

@@ -169,7 +169,7 @@ const Index: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-background">
+    <div>
       <Header 
         activeTab={activeTab} 
         onTabChange={setActiveTab}
@@ -188,7 +188,7 @@ const Index: React.FC = () => {
                     AI-Powered Analysis
                   </div>
                   <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-2 sm:mb-3">
-                    Posture Assessment
+                    Posture Code
                   </h2>
                   <p className="text-muted-foreground text-sm sm:text-lg max-w-xl mx-auto px-4">
                     Upload a side-view standing photo for comprehensive postural analysis using advanced AI.

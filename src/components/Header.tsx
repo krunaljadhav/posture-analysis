@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Activity, History, FileText, Loader2, Menu, X } from 'lucide-react';
+import { Zap, History, FileText, Loader2, Menu, X } from 'lucide-react';
 
 interface HeaderProps {
   activeTab: 'assess' | 'history';
@@ -21,12 +21,12 @@ const Header: React.FC<HeaderProps> = ({ activeTab, onTabChange, isModelLoading 
         <div className="flex items-center justify-between h-14 sm:h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2 sm:space-x-3">
-            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl bg-accent flex items-center justify-center">
-              <Activity className="w-4 h-4 sm:w-6 sm:h-6 text-accent-foreground" />
+            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl bg-gradient-to-br from-accent to-cyan-400 flex items-center justify-center shadow-lg">
+              <Zap className="w-4 h-4 sm:w-6 sm:h-6 text-white" />
             </div>
             <div>
-              <h1 className="text-lg sm:text-xl font-bold tracking-tight">PhysioCode</h1>
-              <p className="text-[10px] sm:text-xs text-primary-foreground/70 hidden xs:block">Posture Assessment</p>
+              <h1 className="text-lg sm:text-xl font-bold tracking-tight">Posture Code</h1>
+              <p className="text-[10px] sm:text-xs text-primary-foreground/70 hidden xs:block">Physio AI Analysis</p>
             </div>
           </div>
           
